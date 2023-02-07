@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./app.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap" rel="stylesheet">
+    <script src="./app.js" defer></script>
+    <title>Movie Theater Equations</title>
+  </head>
+
+  <body>
+    <header>
+      <h1>Movie Theater Equations</h1>
+    </header>
+
+    <main>
+      <div style="text-align:center;">
+        <table>
+          <thead>
+            <tr>
+              <td>
+                <figure>
+                  <img src="./img/big-hero-6.jpg" id="img_bg6" alt="Big Hero 6">
+                  <figcaption>
+                    Ticket Price:
+                    <br>
+                      3 <span id="red">red</span> tokens,
+                    <br>
+                      2 <span id="blue">blue</span> tokens
+                  </figcaption>
+                </figure>
+              </td>
+              <td>
+                <figure>
+                  <img src="./img/inside-out.jpg" id = "img_io" alt="Inside Out">
+                  <figcaption>
+                    Ticket Price:
+                    <br>
+                      2 <span id="red">red</span> tokens,
+                    <br>
+                      3 <span id="blue">blue</span> tokens
+                  </figcaption>
+                </figure>
+              </td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <p>
+                  Click on the button below to purchase a ticket for Big Hero 6!
+                </p>
+                <input type="button" id="button_bg6" value="Big Hero 6">
+              </td>
+              <td>
+                <p>
+                  Click on the button below to purchase a ticket for Inside Out!
+                </p>
+                <input type="button" id="button_io" value="Inside Out">
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div>
+                  <p>
+                    Number of tickets sold for Big Hero 6:
+                    <br>
+                    <span class="counter" id="tix_bg6">&nbsp;</span>
+                  </p>
+                  <p>
+                    Total revenue ($) for Big Hero 6:
+                    <br>
+                    <span class="counter" id="rev_bg6">&nbsp;</span>
+                  </p>
+                </div>
+              </td>
+              <td>
+                <div>
+                  <p>
+                    Number of tickets sold for Inside Out:
+                    <br>
+                    <span class="counter" id="tix_io">&nbsp;</span>
+                  </p>
+                  <p>
+                    Total revenue ($) for Inside Out:
+                    <br>
+                    <span class="counter" id="rev_io">&nbsp;</span>
+                  </p>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <input type="button" id="button_rev" value="Click to show revenues">
+        <br>
+        <input type="button" id="button_reset" value="Reset">
+      </div>
+    </main>
+
+
+  </body>
+
+  <footer>
+    <hr>
+      &copy; <i>Theodore Nguyen, 2023</i>
+  </footer>
+</html>
