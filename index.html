@@ -13,11 +13,11 @@
 
   <body>
     <header>
-      <h1>Movie Theater Equations</h1>
     </header>
 
     <main>
-      <div style="text-align:center;">
+      <div id="flex_container">
+        <h1>Movie Theater Equations</h1>
         <table>
           <thead>
             <tr>
@@ -27,7 +27,7 @@
                   <figcaption>
                     Ticket Price:
                     <br>
-                      3 <span id="red">red</span> tokens,
+                      3 <span id="red">red</span> tokens
                     <br>
                       2 <span id="blue">blue</span> tokens
                   </figcaption>
@@ -39,7 +39,7 @@
                   <figcaption>
                     Ticket Price:
                     <br>
-                      2 <span id="red">red</span> tokens,
+                      2 <span id="red">red</span> tokens
                     <br>
                       3 <span id="blue">blue</span> tokens
                   </figcaption>
@@ -94,9 +94,10 @@
             </tr>
           </tbody>
         </table>
-        <input type="button" id="button_rev" value="Click to show revenues">
-        <br>
-        <input type="button" id="button_reset" value="Reset">
+        <div>
+          <input type="button" id="button_rev" value="Click to show revenues">
+          <input type="button" id="button_reset" value="Reset">
+        </div>
       </div>
     </main>
 
