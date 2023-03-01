@@ -19,13 +19,15 @@ document.getElementById('button_io').addEventListener('click',
 );
 
 // show revenues button
+let rev_bg6 = 0;
+let rev_io = 0;
 document.getElementById('button_rev').addEventListener('click',
   function() {
-    let rev_bg6 = tix_bg6 * 3 * red_token_price + tix_bg6 * 2 * blue_token_price;
-    document.getElementById('rev_bg6').innerHTML = `${rev_bg6}`;
+    rev_bg6 = tix_bg6 * 3 * red_token_price + tix_bg6 * 2 * blue_token_price;
+    document.getElementById('rev_bg6').innerHTML = `$${rev_bg6}`;
 
-    let rev_io = tix_io * 2 * red_token_price + tix_io * 3 * blue_token_price;
-    document.getElementById('rev_io').innerHTML = `${rev_io}`;
+    rev_io = tix_io * 2 * red_token_price + tix_io * 3 * blue_token_price;
+    document.getElementById('rev_io').innerHTML = `$${rev_io}`;
   }
 );
 
